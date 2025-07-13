@@ -16,6 +16,5 @@ check_version_count() {
 check "version" julia --version
 check "version-count" check_version_count
 
-
 # Report result
 reportResults
