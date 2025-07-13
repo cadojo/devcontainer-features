@@ -65,7 +65,7 @@ for channel in "${channels[@]}"; do
     # if channel is not empty and not equal to the default channel...
     if [ "${channel}" != "" ] && [ "${channel}" != "${CHANNEL}" ]; then
         echo "Adding additional Julia channel: ${channel}";
-        su ${USERNAME} -c "${REMOTE_USER_HOME}/.juliaup/bin/juliaup add ${channel}";
+        su "${USERNAME}" -c "${REMOTE_USER_HOME}/.juliaup/bin/juliaup add ${channel}";
     fi
 done
 
