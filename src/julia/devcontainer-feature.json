@@ -17,7 +17,11 @@
         "additionalChannels": {
             "type": "string",
             "default": "",
-            "description": "Additional Juliaup channels to install, separated by commas (e.g., 'nightly,1.10')"
+            "description": "Additional Juliaup channels to install, separated by commas (e.g., 'nightly,1.10')",
+			"proposals": [
+                "",
+ 				"lts,nightly",
+ 			]
         }
     },
     "installsAfter": [

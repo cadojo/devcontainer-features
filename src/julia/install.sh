@@ -59,7 +59,7 @@ export DEBIAN_FRONTEND=noninteractive
 cleanup_apt
 check_packages curl ca-certificates
 
-su ${USERNAME} -c "curl -fsSL https://install.julialang.org | sh -s -- --yes --default-channel ${CHANNEL}"
+su "${USERNAME}" -c "curl -fsSL https://install.julialang.org | sh -s -- --yes --default-channel ${CHANNEL}"
 
 for channel in "${channels[@]}"; do
     # if channel is not empty and not equal to the default channel...
